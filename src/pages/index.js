@@ -2,15 +2,14 @@ import React from 'react';
 import styles from '../styles/about.module.scss';
 import { Image } from '../components';
 import { Layout, SEO } from '../components';
-import photo from '../images/photo.png';
+
 const IndexPage = () => {
     return (
         <Layout>
             {/* <SEO title="Ammew" /> */}
             <div id='about-container' className={styles.container}>
                 <div id='img-section' className={styles.imgSection}>
-                    {/* <Image name={'photo.png'} /> */}
-                    <img src={photo} alt='Profile' width="300" height="300" />
+                    <Image name={'photo.png'} />
                 </div>
                 <div id='about-section' className={styles.aboutSection}>
                     <h3>Hi, I'm Mew!</h3>
