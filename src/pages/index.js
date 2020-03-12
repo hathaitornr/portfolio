@@ -1,21 +1,27 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import styles from '../styles/about.module.scss';
+import { Image } from '../components';
+import { Layout, SEO } from '../components';
+import photo from '../images/photo.png';
+const IndexPage = () => {
+    return (
+        <Layout>
+            {/* <SEO title="Ammew" /> */}
+            <div id='about-container' className={styles.container}>
+                <div id='img-section' className={styles.imgSection}>
+                    {/* <Image name={'photo.png'} /> */}
+                    <img src={photo} alt='Profile' width="300" height="300" />
+                </div>
+                <div id='about-section' className={styles.aboutSection}>
+                    <h3>Hi, I'm Mew!</h3>
+                    <p>Hi, my name is Hathaitorn but I go by Mew! I am a recent graduate from Cornell Tech with a dual Master's degree in Information Systems &amp; Applied Information Science with a concentration in HCI. 
+                    <br/><br/>
+                    I am passionate about designing and developing interactive applications that create meaningful impact for users. I also love creating new toys that people can enjoy and play with, whether it be a digital art experience, a robot, or an app!</p>
+                    <p><a href="https://www.linkedin.com/in/hrojnirun/">LinkedIn</a></p>
+                </div>
+            </div>
+        </Layout>
+    )
+};
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default IndexPage;

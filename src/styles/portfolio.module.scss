@@ -1,0 +1,46 @@
+@import './global.scss';
+
+.container {
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    max-width: 900px;
+    justify-items: center;
+    text-align: center;
+}
+
+.headline {
+    margin-bottom: 50px;
+}
+
+.itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectBox {
+    flex: 1;
+    text-align: center;
+    flex-basis: 45%;
+    min-height: 300px;
+    max-width: 450px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+@include phone {
+    .container {
+        max-width: 100%;
+    }
+
+    .itemContainer {
+        margin: 0 auto;
+        max-width: 450px;
+    }
+
+    .projectBox {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

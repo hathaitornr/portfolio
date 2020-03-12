@@ -1,0 +1,110 @@
+@import '../../styles/global.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $white;
+}
+
+.container {
+    border-bottom: 1px solid $grey;
+}
+
+.items {
+    margin: 10px;
+}
+
+.toggle {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    cursor: pointer; 
+    font-size: 24px;
+}
+
+.toggle span {
+    background-color: $black;
+    border-radius: 1px;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+}
+
+.infoItem {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navlinks {
+    display: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.active {
+    display: block;
+}
+
+.navlink {
+    background: none;
+    border: none;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.navlinks li:nth-child(1) {
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+}
+
+.navlinks li:nth-child(2) {
+    border-bottom: 1px solid $grey;
+}
+
+@include desktop {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+    }
+
+    .navlinks {
+        display: flex;
+        top: 17px;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navlinks li {
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+
+    .navlink {
+        margin: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .navlinks li:nth-child(1) {
+        border-right: 1px dotted $grey;
+    }
+
+    .navlinks li:nth-child(3) {
+        border-left: 1px dotted $grey;
+        margin-bottom: 0;
+    }
+
+    .toggle {
+        display: none;
+    }
+}

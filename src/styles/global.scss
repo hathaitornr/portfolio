@@ -1,0 +1,58 @@
+//Colors
+$black: #000;
+$grey: #999;
+$white: #fff;
+
+//Fonts
+.large-heading {
+
+}
+
+.heading {
+
+}
+
+.sub-heading {
+
+}
+
+.content {
+
+}
+
+.caption {
+  
+}
+
+.link {
+
+}
+
+//screens
+@mixin desktop {
+  @media screen and (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: 850px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
