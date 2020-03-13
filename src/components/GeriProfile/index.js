@@ -13,22 +13,20 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = name => {
+const GeriProfile = () => {
   const data = useStaticQuery(graphql`
     query {
-        file(relativePath: { eq: "photo.png" }) {
+        file(relativePath: { eq: "portfolio/geri.png" }) {
         childImageSharp {
-            # Specify the image processing specifications right in the query.
-            # Makes it trivial to update as your page's design changes.
-            fixed(width: 300, height: 300) {
-            ...GatsbyImageSharpFixed
+            fluid {
+              ...GatsbyImageSharpFluid
             }
         }
         }
     }
   `)
 
-  return <Img fixed={data.file.childImageSharp.fixed} />
+  return <Img fluid={data.file.childImageSharp.fluid} alt='Geri' />
 }
 
-export default Image
+export default GeriProfile;

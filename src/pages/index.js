@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../styles/about.module.scss';
-import { Image } from '../components';
-import { Layout, SEO } from '../components';
+import { Profile, Layout, SEO } from '../components';
 
 const IndexPage = () => {
     return (
@@ -9,7 +8,7 @@ const IndexPage = () => {
             {/* <SEO title="Ammew" /> */}
             <div id='about-container' className={styles.container}>
                 <div id='img-section' className={styles.imgSection}>
-                    <Image name={'photo.png'} />
+                    <Profile />
                 </div>
                 <div id='about-section' className={styles.aboutSection}>
                     <h3>Hi, I'm Mew!</h3>

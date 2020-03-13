@@ -1,0 +1,37 @@
+@import './global.scss';
+
+.container {
+    margin: 0 300px;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.skillContainer {
+    text-align: left;
+}
+
+.skillItem {
+    margin-bottom: 40px;
+}
+
+.skillTitle {
+    font-size: 30px;
+}
+
+@include tablet {
+    .container {
+        margin: 0 150px;
+        margin-top: 100px;
+    }
+}
+
+@include phone {
+    .container {
+        margin: 0 50px;
+        margin-top: 100px;
+    }
+}

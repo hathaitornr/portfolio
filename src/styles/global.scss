@@ -2,6 +2,7 @@
 $black: #000;
 $grey: #999;
 $white: #fff;
+$red: #e44b43;
 
 //Fonts
 .large-heading {
@@ -25,7 +26,12 @@ $white: #fff;
 }
 
 .link {
+  color: $red;
+  text-decoration: none;
+}
 
+p {
+  line-height: 1.6;
 }
 
 //screens
