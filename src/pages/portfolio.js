@@ -20,7 +20,6 @@ const Portfolio = ({ data: { allFile: { nodes } }}) => {
         });
         return res;
     }, nodes);
-    console.log(data);
     return (
         <div className={styles.container}>
             <div id='portfolio-headline' className={styles.headline}>

@@ -5,7 +5,6 @@ import styles from '../styles/project.module.scss'
 
 const Project = ({ data: { allProjectYaml: { nodes } } }) => {
     const [data] = nodes;
-    console.log(data);
     return <div className={styles.container}>
         <Image image={data.banner} />
     </div>

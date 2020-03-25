@@ -4,9 +4,8 @@ import styles from '../styles/about.module.scss';
 import { SEO } from '../components';
 
 const IndexPage = ({ data }) => {
-    console.log(data);
     return (<>
-        <SEO title="Ammew" />
+        {/* <SEO title="About Me" /> */}
         <div id='about-container' className={styles.container}>
             <div id='img-section' className={styles.imgSection}>
                 <Img fixed={data.file.childImageSharp.fixed} alt='Profile' />
