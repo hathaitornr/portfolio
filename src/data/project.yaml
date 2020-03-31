@@ -1,12 +1,71 @@
 - path: "/geri"
   title: "geri"
   banner: "../images/geri/banner.jpg"
+  overview:
+    headline: "Overview"
+    problem:
+      content: "We live in a rapidly aging society. Currently, around 1 million Americans live in some type of senior care facility, and that number is expected to double by the year of 2030. “How might we leverage emerging technology to help seniors live better?” In this project, we were given a challenge from Samsung to discover areas in which elderly users could take advantage of emerging technology. After researching use cases, my team and I found that smart home systems have huge potential in assisted living."
+      headline: "Problem"
+    solution:
+      content: "GERI is a health monitoring system for early detection and intervention of the elderly.
+
+By using smart home tech, we can detect looming health conditions and prevent an addressable problem from turning fatal for senior citizens. This sort of infrastructure is ideal for nursing homes, where there is a mass need for senior attention. By putting sensors in nursing homes, we can monitor seniors’ daily activity and provide information necessary for caretakers to take preemptive action."
+      headline: "Solution"
+    approach:
+      members: "Hathaitorn Rojnirun, Hanyu Zhang, Jonathan Kho"
+      tools: "Javascript, Firebase, Sketch"
+      research: "research"
+      design: "design"
+      testing: "testing"
+  
 - path: "/contentor"
   title: "contentor"
   banner: "../images/contentor/banner.jpg"
+  overview:
+    headline: "Overview"
+    problem:
+      content: "Digital marketing is a highly complex system where there are many different tools & platforms handling different functions like content creation, social media management, analytics, etc. This complexity doesn't allow small and medium-sized businesses (which are low on resources, infrastructure, and money) to make informed decisions and run their marketing campaigns effectively. In this project we consider the challenge of developing a system that can assist employees at small-sized businesses and startups in running an effective marketing campaign."
+      headline: "Problem"
+    solution:
+      content: "Contentor is a platform that assists small-sized businesses and startups in creating marketing content quicker and more efficiently. By utilizing AI-driven technology, our all-in-one platform takes in clients' marketing needs and performs all of the market research, content generation, and publishing in a few simple steps. With Contentor, a single employee at a startup gains the horsepower of a large-scale marketing team."
+      headline: "Solution"
+    approach:
+      members: "Hathaitorn Rojnirun, Daren Liu, Anilkumar Vadali"
+      tools: "Javascript, Firebase, Sketch"
+      research: "research"
+      design: "design"
+      testing: "testing"
+
 - path: "/space"
   title: "space"
   banner: "../images/space/banner.png"
+  overview:
+    headline: "Overview"
+    problem:
+      content: "In this project, we wanted to create an educational platform for kids to learn about science and astronomy in a fun, interactive setting. Most kids learn about science in the traditional classroom setting, with an educator using a blackboard to convey lessons to students. Usually, these sessions lack the visual components that would greatly improve the assimilation of information."
+      headline: "Problem"
+    solution:
+      content: "Space Exploration is an educational platform for students to learn about the solar system. Space Exploration is a mobile application that leverages the interactivity of mobile devices to reinforce understanding of astronomy."
+      headline: "Solution"
+    approach:
+      tools: "Javascript, Firebase, Sketch"
+      research: "research"
+      design: "design"
+      testing: "testing"
+
 - path: "/hlthpal"
   title: "hlthpal"
   banner: "../images/hlthpal/banner.png"
+  overview:
+    headline: "Overview"
+    problem:
+      content: "In this project, we are interested in understanding how information technology can be used to improve the health outcomes of cancer patients in developing countries, with Rwanda as a case study. Similar studies have already been conducted successfully in the developed world, where patients have reported positive outcomes; however, no comprehensive solutions currently exist for cancer patients in developing countries. Our focus is on Rwanda where palliative care for cancer patients at the end-of-life can be fragmented and care-communication is often sub-optimal."
+      headline: "Problem"
+    solution:
+      content: "Hlthpal is an mHealth platform for cancer patients and care providers in Kigali. Hlthpal includes a mobile application for cancer patients in Kigali, the capital city, to record their symptoms periodically and a web dashboard for their care providers to view, track and respond to these symptoms. The goals of this platform are to centralize symptom management, improve upon paper-based methods and patient care coordination, and evaluate quality of life and life expectancy of cancer patients using the platform."
+      headline: "Solution"
+    approach:
+      tools: "Javascript, Firebase, Sketch"
+      research: "research"
+      design: "design"
+      testing: "testing"

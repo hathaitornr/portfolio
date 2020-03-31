@@ -5,16 +5,19 @@ $white: #fff;
 $red: #e44b43;
 
 //Fonts
-.large-heading {
+.largeHeading {
 
 }
 
 .heading {
-
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
 }
 
-.sub-heading {
-
+.subHeading {
+  font-size: 28px;
+  font-weight: 600;
 }
 
 .content {
@@ -57,8 +60,4 @@ p {
   @media screen and (max-width: 500px) {
     @content;
   }
-}
-
-ul {
-  list-style-type: none;
 }

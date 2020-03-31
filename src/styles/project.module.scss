@@ -3,3 +3,16 @@
 .container {
     margin-top: 70px;
 }
+
+.contentWrapper {
+    margin: 0 auto;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+@include phone {
+    .contentWrapper {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
