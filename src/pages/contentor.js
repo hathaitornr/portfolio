@@ -62,6 +62,9 @@ const Contentor = ({ data: { allProjectYaml: { nodes } } }) => {
                 <Section title='Prototype' sectionStyle='sub' headerStyle='subHeading'>
                     Section for Prototype
                 </Section>
+            </Section>
+            <Section title='Testing'>
+                Gunna need to figure out more stuff for this section
                 <Section title='Second Iteration' sectionStyle='sub' headerStyle='subHeading'>
                     Section for Second Iteration
                 </Section>
@@ -87,9 +90,6 @@ const Contentor = ({ data: { allProjectYaml: { nodes } } }) => {
                         As we were iterating on the platform, we performed more usability tests on different prototypes to expose more UX flaws and gather more feedback.
                     </p>
                 </Section>
-            </Section>
-            <Section title='Testing'>
-                Gunna need to figure out more stuff for this section
             </Section>
             <Section title='Final'>
                 <p className={styles.content}>The workflow is broken into 3 main parts:</p>

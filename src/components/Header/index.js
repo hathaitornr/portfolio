@@ -22,9 +22,8 @@ const Header = () => {
                     </div>
                 </div>
                 <ul id='nav-links' className={cx(styles.navlinks, { [styles.active]: !hide })}>
-                    <li><Link to='/'><button className={styles.navlink}>About Me</button></Link></li>
-                    <li><Link to='/skills'><button className={styles.navlink}>Skills</button></Link></li>
                     <li><Link to='/portfolio'><button className={styles.navlink}>Portfolio</button></Link></li>
+                    <li><Link to='/'><button className={styles.navlink}>About Me</button></Link></li>
                 </ul>
             </div>
         </div>

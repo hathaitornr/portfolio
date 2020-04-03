@@ -46,6 +46,8 @@ const Hlthpal = ({ data: { allProjectYaml: { nodes } } }) => {
                 <Section title='Prototype' sectionStyle='sub' headerStyle='subHeading'>
                     Section for Prototype
                 </Section>
+            </Section>
+            <Section title='Testing'>
                 <Section title='Pilot Test' sectionStyle='sub' headerStyle='subHeading'>
                     <p className={styles.content}>
                         Over the course of the project, we conducted several remote pilot tests with oncologists, and made several iterations on our mobile and dashboard prototypes. Prior to testing with actual patients, we had oncologists test out both the mobile and web applications. We wanted to see if the oncologist were able to successfully complete a series of tasks with ease and observe any potential usability flaws. For example, we had oncologists go through the mobile application and complete the questionnaire. While they were submitting their answers, we observed any difficulties they had and how long it took for them to complete the questionnaire. Afterward, I held semi-structured interviews with them to follow up on their experience and ask about any difficulties they had. Some of the key issues were:
@@ -67,9 +69,6 @@ const Hlthpal = ({ data: { allProjectYaml: { nodes } } }) => {
                         </ul>
                     </p>
                 </Section>
-            </Section>
-            <Section title='Testing'>
-                Gunna need to figure out more stuff for this section
             </Section>
             <Section title='Final'>
                 <p className={styles.content}>The system is comprised of 2 parts:

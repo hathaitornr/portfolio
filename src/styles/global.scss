@@ -1,27 +1,64 @@
 //Colors
-$black: #000;
-$grey: #999;
+$black: #000000;
+$grey: #e8e8e8;
 $white: #fff;
 $red: #e44b43;
+
+$text: #2b2b2b;
+$heading: #4a4a4a;
 
 //Fonts
 .largeHeading {
 
 }
 
+.headline {
+  font-size: 18px;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Dosis", "Open Sans", Arial, Helvetica, sans-serif;
+  color: #181818;
+}
+
 .heading {
-  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', sans-serif;
+  color: $heading;
+  font-size: 32px;
+  line-height: 34px;
   font-weight: 300;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .subHeading {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
+  padding: 0px;
+  color: $text;
+  font-size: 24px;
 }
 
 .content {
+  padding-left: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: $text;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
 
+.intro {
+  font-size: 36px;
+  font-weight: 700;
+  color: $text;
+  text-transform: uppercase;
+  line-height: 1.1;
+  padding: 0 0px 10px 0;
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: "Dosis", "Open Sans", Arial, Helvetica, sans-s
 }
 
 .caption {
@@ -30,7 +67,9 @@ $red: #e44b43;
 
 .link {
   color: $red;
+  border-bottom: 1px dotted $red;
   text-decoration: none;
+  font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 p {

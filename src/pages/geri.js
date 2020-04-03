@@ -28,12 +28,12 @@ const Geri = ({ data: { allProjectYaml: { nodes } } }) => {
                 <Section title='Prototype' sectionStyle='sub' headerStyle='subHeading'>
                     Section for Prototype
                 </Section>
-                <Section title='Iterations' sectionStyle='sub' headerStyle='subHeading'>
-                    Section for Iteration
-                </Section>
             </Section>
             <Section title='Testing'>
                 Gunna need to figure out more stuff for this section
+                <Section title='Iterations' sectionStyle='sub' headerStyle='subHeading'>
+                    Section for Iteration
+                </Section>
             </Section>
             <Section title='Final'>
                 <p className={styles.content}>The system is comprised of 2 parts:

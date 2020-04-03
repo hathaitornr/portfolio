@@ -22,11 +22,9 @@
     flex: 1;
     text-align: center;
     flex-basis: 45%;
-    min-height: 300px;
     max-width: 450px;
     cursor: pointer;
     margin: 5px;
-    margin: 0 auto;
 }
 
 @include phone {

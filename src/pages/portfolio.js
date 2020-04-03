@@ -22,15 +22,10 @@ const Portfolio = ({ data: { allFile: { nodes } }}) => {
     }, nodes);
     return (
         <div className={styles.container}>
-            <div id='portfolio-headline' className={styles.headline}>
-                <h1>Portfolio</h1>
+            <div id='portfolio-headline' className={styles.intro}>
+                <p>Portfolio</p>
             </div>
             <div id='item-container' className={styles.itemContainer}>
-                <figure className={styles.projectBox}>
-                    <Link to='/geri'>
-                        <Image image={data.geri} alt='Geri' />
-                    </Link>
-                </figure>
                 <figure className={styles.projectBox}>
                     <Link to='/hlthpal'>
                         <Image image={data.hlthpal} alt='Hlthpal' />
@@ -39,6 +34,11 @@ const Portfolio = ({ data: { allFile: { nodes } }}) => {
                 <figure className={styles.projectBox}>
                     <Link to='/contentor'>
                         <Image image={data.contentor} alt='Contentor' />
+                    </Link>
+                </figure>
+                <figure className={styles.projectBox}>
+                    <Link to='/geri'>
+                        <Image image={data.geri} alt='Geri' />
                     </Link>
                 </figure>
                 <figure className={styles.projectBox}>
