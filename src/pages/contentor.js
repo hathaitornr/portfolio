@@ -12,7 +12,7 @@ const Contentor = ({ data: { allProjectYaml: { nodes } } }) => {
             <Section title='Research'>
                 <p className={styles.content}>We performed research to gain a better understanding of the marketing space and quickly realized how congested the space really was. There were many different companies providing software and applications for a variety of different purposes. There were applications for content management, performance analysis, and research. However, because each service was costly, companies would have to spend an abnormally high price to manage an efficient marketing campaign.</p>
                 <Section title='Surveys' sectionStyle='sub' headerStyle='subHeading'>
-                    <p className={styles.content}>
+                    <article className={styles.content}>
                     From these surveys, we narrowed down a list of potential users from different aspects of the marketing field, ranging from content writers to managers. We chose users who volunteered to be interviewed and provided very rich responses. The purpose of the interview was to dive deeper into some of the survey responses and hear more about the participants' issues. From these interviews, we extracted these key findings:
                         <ul>
                             <li>Demographics: We started by asking some general demographic questions such as age, sex, occupation, and years in that occupation.</li>
@@ -22,10 +22,10 @@ const Contentor = ({ data: { allProjectYaml: { nodes } } }) => {
                             <li>Short Answer: The last section asked them questions about their opinions of their job functions, areas for improvement, and notable issues.</li>
                             <li>Interview: Finally, we asked if they would be open to an interview in the future.</li>
                         </ul>
-                    </p>
+                    </article>
                 </Section>
                 <Section title='User Interviews' sectionStyle='sub' headerStyle='subHeading'>
-                    <p className={styles.content}>
+                    <article className={styles.content}>
                         From these surveys, we narrowed down a list of potential users from different aspects of the marketing field, ranging from content writers to managers. We chose users who volunteered to be interviewed and provided very rich responses. The purpose of the interview was to dive deeper into some of the survey responses and hear more about the participants' issues. From these interviews, we extracted these key findings:
                         <ul>
                             <li>Demographics: We started by asking some general demographic questions such as age, sex, occupation, and years in that occupation.</li>
@@ -35,20 +35,20 @@ const Contentor = ({ data: { allProjectYaml: { nodes } } }) => {
                             <li>Short Answer: The last section asked them questions about their opinions of their job functions, areas for improvement, and notable issues.</li>
                             <li>Interview: Finally, we asked if they would be open to an interview in the future.</li>
                         </ul>
-                    </p>
+                    </article>
                 </Section>
                 <Section title='Persona' sectionStyle='sub' headerStyle='subHeading'>
                     <p className={styles.content}>Based on our findings from those user interviews, we created two user personas to represent a potential clinician and patient and their issues. We wanted to get a sense of a user's motivations and frustrations in their current situation and how we can address those points.</p>
                 </Section>
                 <Section title='User Pain Points' sectionStyle='sub' headerStyle='subHeading'>
-                    <p className={styles.content}>
+                    <article className={styles.content}>
                         Below is a summary of the user pain points
                         <ul>
                             <li>There are many services and tools that target only subsets of the marketing workflow</li>
                             <li>Small businesses and startups cannot afford a marketing team and usually leave these tasks to someone who lacks the marketing expertise</li>
                             <li>These companies need a tool that can push content out quickly and monitor campaigns efficiently.</li>
                         </ul>
-                    </p>
+                    </article>
                 </Section>
             </Section>
             <Section title='Design'>
@@ -69,7 +69,7 @@ const Contentor = ({ data: { allProjectYaml: { nodes } } }) => {
                     Section for Second Iteration
                 </Section>
                 <Section title='Pilot Study' sectionStyle='sub' headerStyle='subHeading'>
-                    <p className={styles.content}>
+                    <article className={styles.content}>
                         The study was divided into 3 parts:
                         <ul>
                             <li>First, we had a short interview with each participant to collect general demographic information.</li>
@@ -77,10 +77,10 @@ const Contentor = ({ data: { allProjectYaml: { nodes } } }) => {
                             <li>Finally, we held a short interview afterward where we asked them about their experience with the platform. We asked them questions regarding how they felt using our platform and why, and had them rate the difficulty of the tool. We also asked follow up questions regarding certain parts of the task that we noticed they struggled with.</li>
                         </ul>
                         From this initial pilot study, we found that users were confused by "Social Media" dropdown. While they understood that they could choose different options, such as "Facebook" or "Twitter", most were not aware that the "Social Media" text was its own option. In addition, many were confused about the purpose of the individual social media options if the main "Social Media" option already allowed you to choose between the different sites to publish to. We also found that users were very confused about the difference between the campaign report in the main page, and the one on the social media page.
-                    </p>
+                    </article>
                 </Section>
                 <Section title='Further Iterations' sectionStyle='sub' headerStyle='subHeading'>
-                    <p className={styles.content}>
+                    <article className={styles.content}>
                         We made a couple of improvements after collecting feedback from marketing managers:
                         <ul>
                             <li>In response to users' confusion with social media choices, we settled on having a single "Social Media" button where users can choose from different social media platforms. We also changed the name of the button to "Create Campaign" to make the purpose more direct.</li>
@@ -88,7 +88,7 @@ const Contentor = ({ data: { allProjectYaml: { nodes } } }) => {
                             <li>We chose to focus specifically on social media campaigns and removed the media-specific campaign reports, and instead, displayed the social media marketing reports on the main page.</li>
                         </ul>
                         As we were iterating on the platform, we performed more usability tests on different prototypes to expose more UX flaws and gather more feedback.
-                    </p>
+                    </article>
                 </Section>
             </Section>
             <Section title='Final'>
@@ -127,6 +127,8 @@ export const query = graphql`
                     solution {
                         content
                         headline
+                        feature1
+                        feature2
                     }
                     approach {
                         members

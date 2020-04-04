@@ -15,7 +15,7 @@ const Hlthpal = ({ data: { allProjectYaml: { nodes } } }) => {
                     <p className={styles.content}>Given the growing pace of mHealth applications in developing countries and the intangible value shown by palliative care applications deployed in developed countries, we are well-positioned to design a tool that takes the lessons learnt from both branches to develop a tool that addresses the needs of patients receiving palliative care in developing countries.</p>
                 </Section>
                 <Section title='User Interviews' sectionStyle='sub' headerStyle='subHeading'>
-                    <p className={styles.content}>Due to the unique challenge of targeting users in a different continent, we knew that arranging user interviews would be difficult. However, due to our partnership with Harvard Medical School, which was spearheading the effort to introduce the healthcare interventions to Rwandan clinics, we were able to speak with experts in the field and hold remote user interviews with oncologists in Rwanda and Harvard. From these interviews, we extracted these key findings:
+                    <article className={styles.content}>Due to the unique challenge of targeting users in a different continent, we knew that arranging user interviews would be difficult. However, due to our partnership with Harvard Medical School, which was spearheading the effort to introduce the healthcare interventions to Rwandan clinics, we were able to speak with experts in the field and hold remote user interviews with oncologists in Rwanda and Harvard. From these interviews, we extracted these key findings:
                         <ul>
                             <li>Before the actual writing process, writers have to spend the majority of a work week performing market research.</li>
                             <li>When it comes down to the writing process, they have to spend time thinking of the optimal keywords that would attract the ideal user</li>
@@ -23,7 +23,7 @@ const Hlthpal = ({ data: { allProjectYaml: { nodes } } }) => {
                             <li>There is no singular tool for all of these functions. Marketing teams must use different tools for each task.</li>
                             <li>Not all companies have large marketing teams. Some companies delegate these tasks to a few employees, who do not possess the necessary marketing skills.</li>
                         </ul>
-                    </p>
+                    </article>
                 </Section>
                 <Section title='Persona' sectionStyle='sub' headerStyle='subHeading'>
                     Section for Persona
@@ -49,33 +49,33 @@ const Hlthpal = ({ data: { allProjectYaml: { nodes } } }) => {
             </Section>
             <Section title='Testing'>
                 <Section title='Pilot Test' sectionStyle='sub' headerStyle='subHeading'>
-                    <p className={styles.content}>
+                    <article className={styles.content}>
                         Over the course of the project, we conducted several remote pilot tests with oncologists, and made several iterations on our mobile and dashboard prototypes. Prior to testing with actual patients, we had oncologists test out both the mobile and web applications. We wanted to see if the oncologist were able to successfully complete a series of tasks with ease and observe any potential usability flaws. For example, we had oncologists go through the mobile application and complete the questionnaire. While they were submitting their answers, we observed any difficulties they had and how long it took for them to complete the questionnaire. Afterward, I held semi-structured interviews with them to follow up on their experience and ask about any difficulties they had. Some of the key issues were:
                         <ul>
                             <li>One of the oncologists in Rwanda mentioned the importance of having a signature feature so that activity on the dashboard can be tracked and attributed to the right individuals. This is especially important in a high-stake situation like palliative care where life is involved.</li>
                             <li>They wanted the Patient Registration Form to have a field for special demographic information. Rwanda has a national demographic classification system that wasn't reflected in our design.</li>
                         </ul>
-                    </p>
+                    </article>
                 </Section>
                 <Section title='Iterations' sectionStyle='sub' headerStyle='subHeading'>
                     Section for Iteration
                 </Section>
                 <Section title='Field Test' sectionStyle='sub' headerStyle='subHeading'>
-                    <p className={styles.content}>
+                    <article className={styles.content}>
                         We held a second field test with 50 patients and 10 oncologists over the span of one month.
                         <ul>
                             <li>The overall feedback from surveys was very positive. Doctors found that having a web dashboard allowed them to be more organized and efficient in monitoring patients, while patients found the mobile app to be easy-to-use and very convenient. Overall, it significantly improved symptom management for patients and communication between the patient and the doctor. One point of concern was that some patients felt that this new system would remove the need for in-person patient-doctor interactions. However, the oncologists assured them that they would still be holding appointments and providing the same quality of care.</li>
                             <li>In addition to surveys, we analyzed quantitative data from the application. We measured the time it took to complete tasks as well as any technical errors. Analysis of the data showed that there were zero technical errors while performing tasks. Below is a visualization of the app usage of one of the oncologists:</li>
                         </ul>
-                    </p>
+                    </article>
                 </Section>
             </Section>
             <Section title='Final'>
-                <p className={styles.content}>The system is comprised of 2 parts:
+                <article className={styles.content}>The system is comprised of 2 parts:
                 <ul>
                     <li>A series of smart devices strategically installed in the elderly patient's room to collect data. In our prototype, we used Samsung's smart home starter kit, specifically its motion sensor, to collect live data. Using Samsung’s smart app written in groovy, the data was then pushed to our “Firebase Instance.” This allowed us to work with the data, create visualizations, and present the insights on our dashboard via JavaScript.</li>
                     <br/>
-                    <li>A dashboard that allows nurses to monitor and act upon the collected data.</li></ul></p>
+                    <li>A dashboard that allows nurses to monitor and act upon the collected data.</li></ul></article>
             </Section>
         </div>
     </div>
@@ -105,6 +105,8 @@ export const query = graphql`
                     solution {
                         content
                         headline
+                        feature1
+                        feature2
                     }
                     approach {
                         members

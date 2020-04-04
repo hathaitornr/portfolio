@@ -70,6 +70,9 @@ export const query = graphql`
                     solution {
                         content
                         headline
+                        feature1
+                        feature2
+                        feature3
                     }
                     approach {
                         members
