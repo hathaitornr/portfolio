@@ -9,19 +9,19 @@
     z-index: 1;
 }
 
+.items {
+    padding-top: 19px;
+}
+
 .container {
     border-bottom: 1px solid $grey;
     height: 70px;
 }
 
-// .items {
-//     margin: 10px;
-// }
-
 .toggle {
     position: absolute;
-    top: 27px;
     right: 20px;
+    padding-top: 5px;
     cursor: pointer; 
     font-size: 24px;
 }
@@ -75,11 +75,16 @@
 }
 
 @include desktop {
+
     .container {
         display: flex;
         justify-content: space-between;
         height: 70px;
         align-items: center;
+    }
+
+    .items {
+        padding-top: 0px;
     }
 
     .navlinks {
@@ -104,11 +109,11 @@
     }
 
     .navlinks li:nth-child(1) {
-        border-right: 1px dotted $grey;
+        border-right: 1px dotted $dark-grey;
     }
 
     .navlinks li:nth-child(3) {
-        border-left: 1px dotted $grey;
+        border-left: 1px dotted $dark-grey;
         margin-bottom: 0;
     }
 

@@ -1,12 +1,60 @@
+@import '../../styles/global.scss';
+
 .container {
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 50px;
 }
 
-.first {
-    order: 1;
+.reverse {
+    flex-direction: row-reverse;
+    
+    .imgSection {
+        margin-right: 50px;
+        margin-left: 0px;
+    }
 }
 
-.second {
-    order: 2;
+.imgSection {
+    object-fit: contain;
+    align-self: flex-start;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.contentSection  {
+    width: 50%;
+    margin: 0px;
+}
+
+@include tablet {
+    .container {
+        flex-direction: column;
+    }
+
+    .imgSection {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .contentSection {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@include phone {
+    .container {
+        flex-direction: column;
+    }
+
+    .imgSection {
+        margin: 0 auto;
+    }
+
+    .aboutSection {
+        margin: 0 auto;
+    }
 }

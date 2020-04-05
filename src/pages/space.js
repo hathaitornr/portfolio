@@ -48,33 +48,7 @@ export const query = graphql`
     query {
         allProjectYaml(filter: { title: { eq: "space" } }) {
             nodes {
-                title
-                path
-                banner {
-                    childImageSharp {
-                      fluid {
-                        ...GatsbyImageSharpFluid
-                      }
-                    }
-                }
-                overview {
-                    headline
-                    problem {
-                        content
-                        headline
-                    }
-                    solution {
-                        content
-                        headline
-                    }
-                    approach {
-                        members
-                        tools
-                        research
-                        design
-                        testing
-                    }
-                }
+                ...basicInfo
             }
         }
     }

@@ -8,9 +8,18 @@
       headline: "Problem"
     solution:
       content: "GERI is a health monitoring system for early detection and intervention of the elderly. It combines a smart home system that monitors patients and a centralized dashboard for healthcare workers to view patient data and receive any alerts and notifications regarding patients’ condition."
-      feature1: "Utilizing smart home technology allows healthcare workers to passively monitor patients at all times without the need for additional staff."
-      feature2: "GERI will alert all necessary staff of any looming health conditions or anomalous behavior it detects so that preemptive action can be taken to prevent any addressable problem from turning fatal for senior citizens."
-      feature3: "All patient data is aggregated into a single dashboard that healthcare professionals can easily access to view patient reports and add updates."
+      feature1:
+        content: "Utilizing smart home technology allows healthcare workers to passively monitor patients at all times without the need for additional staff."
+        image: "../images/favicon.png"
+        reverse: false
+      feature2:
+        content: "GERI will alert all necessary staff of any looming health conditions or anomalous behavior it detects so that preemptive action can be taken to prevent any addressable problem from turning fatal for senior citizens."
+        image: "../images/favicon.png"
+        reverse: true
+      feature3:
+        content: "All patient data is aggregated into a single dashboard that healthcare professionals can easily access to view patient reports and add updates."
+        image: "../images/favicon.png"
+        reverse: false
       headline: "Solution"
     approach:
       members: "Hathaitorn Rojnirun, Hanyu Zhang, Jonathan Kho, João Gilberto Campagnaro, Fani Maksakuli"
@@ -29,13 +38,19 @@
       headline: "Problem"
     solution:
       content: "Contentor is a platform that assists small-sized businesses and startups in creating marketing content quicker and more efficiently."
-      feature1: "By utilizing AI-driven technology, our all-in-one platform takes in clients' marketing needs and performs all of the content generation, and publishing, and analytics in a few simple steps."
-      feature2: "With Contentor, a single employee at a startup gains the horsepower of a large-scale marketing team."
+      feature1: 
+        content: "By utilizing AI-driven technology, our all-in-one platform takes in clients' marketing needs and performs all of the content generation, and publishing, and analytics in a few simple steps."
+        image: "../images/favicon.png"
+        reverse: true
+      feature2:
+        content: "With Contentor, a single employee at a startup gains the horsepower of a large-scale marketing team."
+        image: "../images/favicon.png"
+        reverse: false
       headline: "Solution"
     approach:
       members: "Hathaitorn Rojnirun, Daren Liu, Anilkumar Vadali, Advika Nigam, Nikhil Kejriwal"
       tools: "Javascript, Firebase, Sketch"
-      research: "User Interviews, Surveys, Persona"
+      research: "Competitive Analysis, User Interviews, Surveys, Persona"
       design: "Wireframes, Hi-Fi Prototyping"
       testing: "Pilot Study"
 
@@ -49,8 +64,14 @@
       headline: "Problem"
     solution:
       content: "Hlthpal is an mHealth platform that improves upon patient care for cancer patients and care providers in Kigali, Rwanda. The platform centralizes symptom management, improves upon paper-based methods and patient care coordination, and evaluates quality of life and life expectancy of cancer patients."
-      feature1: "From the patient perspective, Hlthpal is a mobile application that can record their symptoms periodically so they don’t need to travel to report to a doctor."
-      feature2: "From the doctor perspective, it is a web dashboard that allows them to view, track and respond to these symptoms from a centralized digital platform."
+      feature1:
+        content: "From the patient perspective, Hlthpal is a mobile application that can record their symptoms periodically so they don’t need to travel to report to a doctor."
+        image: "../images/favicon.png"
+        reverse: false
+      feature2: 
+        content: "From the doctor perspective, it is a web dashboard that allows them to view, track and respond to these symptoms from a centralized digital platform."
+        image: "../images/favicon.png"
+        reverse: true
       headline: "Solution"
     approach:
       members: "Hathaitorn Rojnirun, Oluseye Bankole"

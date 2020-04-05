@@ -1,0 +1,9 @@
+@import '../../styles/global.scss';
+
+.container {
+    margin-right: 50px;
+}
+
+@include phone {
+    display: none;
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Image, Section, Overview } from '../components'
+import { Image, Section, Overview, Sidebar } from '../components'
 import styles from '../styles/project.module.scss'
 
 const Hlthpal = ({ data: { allProjectYaml: { nodes } } }) => {
     const { banner, overview } = nodes[0];
     return <div className={styles.container}>
-        <Image image={banner} />
+        <Image image={banner} alt='Banner'/>
         <div className={styles.contentWrapper}>
             <Overview content={overview} />
             <Section title='Research'>
@@ -87,35 +87,7 @@ export const query = graphql`
     query {
         allProjectYaml(filter: { title: { eq: "hlthpal" } }) {
             nodes {
-                title
-                path
-                banner {
-                    childImageSharp {
-                      fluid {
-                        ...GatsbyImageSharpFluid
-                      }
-                    }
-                }
-                overview {
-                    headline
-                    problem {
-                        content
-                        headline
-                    }
-                    solution {
-                        content
-                        headline
-                        feature1
-                        feature2
-                    }
-                    approach {
-                        members
-                        tools
-                        research
-                        design
-                        testing
-                    }
-                }
+                ...basicInfo
             }
         }
     }

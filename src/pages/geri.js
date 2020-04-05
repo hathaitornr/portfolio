@@ -52,36 +52,7 @@ export const query = graphql`
     query {
         allProjectYaml(filter: { title: { eq: "geri"  } }) {
             nodes {
-                title
-                path
-                banner {
-                    childImageSharp {
-                      fluid {
-                        ...GatsbyImageSharpFluid
-                      }
-                    }
-                }
-                overview {
-                    headline
-                    problem {
-                        content
-                        headline
-                    }
-                    solution {
-                        content
-                        headline
-                        feature1
-                        feature2
-                        feature3
-                    }
-                    approach {
-                        members
-                        tools
-                        research
-                        design
-                        testing
-                    }
-                }
+                ...basicInfo
             }
         }
     }

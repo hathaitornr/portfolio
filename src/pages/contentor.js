@@ -109,35 +109,7 @@ export const query = graphql`
     query {
         allProjectYaml(filter: { title: { eq: "contentor" } }) {
             nodes {
-                title
-                path
-                banner {
-                    childImageSharp {
-                      fluid {
-                        ...GatsbyImageSharpFluid
-                      }
-                    }
-                }
-                overview {
-                    headline
-                    problem {
-                        content
-                        headline
-                    }
-                    solution {
-                        content
-                        headline
-                        feature1
-                        feature2
-                    }
-                    approach {
-                        members
-                        tools
-                        research
-                        design
-                        testing
-                    }
-                }
+                ...basicInfo
             }
         }
     }

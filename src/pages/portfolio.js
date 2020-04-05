@@ -19,7 +19,7 @@ const Portfolio = ({ data: { allFile: { nodes } }}) => {
             }
         });
         return res;
-    }, nodes);
+    }, [nodes]);
     return (
         <div className={styles.container}>
             <div id='portfolio-headline' className={styles.intro}>
