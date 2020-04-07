@@ -1,7 +1,17 @@
 @import '../../styles/global.scss';
 
 .container {
-    margin-right: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    min-width: 20%;
+    height: 200px;
+    padding-left: 20px;
+    margin-top: 150px;
+}
+
+.linkList {
+    list-style-type: none;
 }
 
 @include phone {

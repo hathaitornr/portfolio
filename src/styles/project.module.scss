@@ -4,9 +4,13 @@
     margin-top: 70px;
 }
 
+.stickyWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .contentWrapper {
     margin: 0 auto;
-    margin-left: 20%;
     margin-right: 20%;
 }
 

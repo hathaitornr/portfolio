@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './styles.module.scss';
 
-const Sidebar = ({ links }) => {
+const Sidebar = () => {
+    const list=["Overview", "Research", "Design", "Testing", "Final"];
     return (
         <div className={styles.container}>
-            <ul>
-                {links.map(({link, title}) => (
-                    <li><a href={link}>{title}</a></li>
+            <ul className={styles.linkList}>
+                {list.map(link => (
+                    <li><a href={`#${link}`}>{link}</a></li>
                 ))}
             </ul>
         </div>
