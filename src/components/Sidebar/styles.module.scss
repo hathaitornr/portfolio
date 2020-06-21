@@ -15,5 +15,7 @@
 }
 
 @include phone {
-    display: none;
+    .container {
+        display: none;
+    }
 }

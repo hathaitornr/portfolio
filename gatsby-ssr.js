@@ -4,8 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-import React from 'react'
-import { Layout } from './src/components'
+import React from "react"
+import { Layout } from "./src/components"
 
 export const wrapPageElement = ({ element, props }) => {
   // props provide same data to Layout as Page element will get

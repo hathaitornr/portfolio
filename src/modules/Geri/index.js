@@ -1,0 +1,6 @@
+export { default as Introduction } from "./Introduction"
+export { default as Research } from "./Research"
+export { default as Design } from "./Design"
+export { default as Testing } from "./Testing"
+export { default as Final } from "./Final"
+export { default as Conclusion } from "./Conclusion"

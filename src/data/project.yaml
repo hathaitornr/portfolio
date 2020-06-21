@@ -1,99 +1,15 @@
 - path: "/geri"
   title: "geri"
   banner: "../images/geri/banner.jpg"
-  overview:
-    headline: "Overview"
-    problem:
-      content: "We live in a rapidly aging society. Currently, around 1 million Americans live in some type of senior care facility, and that number is expected to double by the year of 2030. As a result, hospitals and senior care facilities will face a tremendous challenge in providing the proper care to all these patients. In this project, my team and I explored the possibility of utilizing emerging technology to help these care facilities provide better care for their elderly patients. On a related note, many tech companies have already been working to create applications and software for hospitals to improve their workflow and help provide better care for patients. However, many of these applications fail because of a lack of understanding of the hospital workflow and the target users. For example, in such a fast-paced environment where patient lives are the priority, many healthcare professionals simply do not have the time to transition to a new system. Furthermore, healthcare workers already incorporate so many other resources to record patient data, take notes, view test results, etc. Introducing another tool would inevitably lead to more complexity in their operations. In addition, many healthcare workers and patients, may not even have the same level of technical experience as those in the tech industry, which may prove a hindrance in operating any potential systems. So, even if a new application was made to help care facilities provide better care for their elderly patients, it is bound to fail if it does not consider how the current system works and the level of technical prowess of its target users."
-      headline: "Problem"
-    solution:
-      content: "GERI is a health monitoring system for early detection and intervention of the elderly. It combines a smart home system that monitors patients and a centralized dashboard for healthcare workers to view patient data and receive any alerts and notifications regarding patients’ condition."
-      feature1:
-        content: "Utilizing smart home technology allows healthcare workers to passively monitor patients at all times without the need for additional staff."
-        image: "../images/favicon.png"
-        reverse: false
-      feature2:
-        content: "GERI will alert all necessary staff of any looming health conditions or anomalous behavior it detects so that preemptive action can be taken to prevent any addressable problem from turning fatal for senior citizens."
-        image: "../images/favicon.png"
-        reverse: true
-      feature3:
-        content: "All patient data is aggregated into a single dashboard that healthcare professionals can easily access to view patient reports and add updates."
-        image: "../images/favicon.png"
-        reverse: false
-      headline: "Solution"
-    approach:
-      members: "Hathaitorn Rojnirun, Hanyu Zhang, Jonathan Kho, João Gilberto Campagnaro, Fani Maksakuli"
-      tools: "Javascript, Firebase, Sketch"
-      research: "User Interviews, Affinity Mapping"
-      design: "Paper prototyping, Hi-Fi Prototyping"
-      testing: "testing"
-  
+
 - path: "/contentor"
   title: "contentor"
   banner: "../images/contentor/banner.jpg"
-  overview:
-    headline: "Overview"
-    problem:
-      content: "Digital Marketing is such a complex ecosystem where there are many different tools & platforms handling different functions like content creation, social media management, analytics etc. This complexity doesn’t allow small & medium businesses (which are low on resources, infrastructure & money) to make informed decisions and run their marketing effectively. They have at most 1-2 social media managers who are overworked to the point that they slip up in performing certain tasks imperative to gain traction and market differentiation."
-      headline: "Problem"
-    solution:
-      content: "Contentor is a platform that assists small-sized businesses and startups in creating marketing content quicker and more efficiently."
-      feature1: 
-        content: "By utilizing AI-driven technology, our all-in-one platform takes in clients' marketing needs and performs all of the content generation, and publishing, and analytics in a few simple steps."
-        image: "../images/favicon.png"
-        reverse: true
-      feature2:
-        content: "With Contentor, a single employee at a startup gains the horsepower of a large-scale marketing team."
-        image: "../images/favicon.png"
-        reverse: false
-      headline: "Solution"
-    approach:
-      members: "Hathaitorn Rojnirun, Daren Liu, Anilkumar Vadali, Advika Nigam, Nikhil Kejriwal"
-      tools: "Javascript, Firebase, Sketch"
-      research: "Competitive Analysis, User Interviews, Surveys, Persona"
-      design: "Wireframes, Hi-Fi Prototyping"
-      testing: "Pilot Study"
 
 - path: "/hlthpal"
   title: "hlthpal"
   banner: "../images/hlthpal/banner.png"
-  overview:
-    headline: "Overview"
-    problem:
-      content: "Cancer care for developing countries is severely lacking when compared to that of countries like the U.S. Patient data is not up-to-date, access to palliative care and resources are limited, and many patients live in remote areas, which prevents them from having regular doctor visits. And while there has been research in utilizing mobile technology to improve patients’ ability to manage their health and communicate with doctors, most of it has only been conducted in developed countries like the United States."
-      headline: "Problem"
-    solution:
-      content: "Hlthpal is an mHealth platform that improves upon patient care for cancer patients and care providers in Kigali, Rwanda. The platform centralizes symptom management, improves upon paper-based methods and patient care coordination, and evaluates quality of life and life expectancy of cancer patients."
-      feature1:
-        content: "From the patient perspective, Hlthpal is a mobile application that can record their symptoms periodically so they don’t need to travel to report to a doctor."
-        image: "../images/favicon.png"
-        reverse: false
-      feature2: 
-        content: "From the doctor perspective, it is a web dashboard that allows them to view, track and respond to these symptoms from a centralized digital platform."
-        image: "../images/favicon.png"
-        reverse: true
-      headline: "Solution"
-    approach:
-      members: "Hathaitorn Rojnirun, Oluseye Bankole"
-      tools: "Javascript, Firebase, Sketch"
-      research: "Literature Review, User Interviews, Persona"
-      design: "Storyboard, Hi-Fi Prototyping, A/B Testing"
-      testing: "Pilot Study, Field Study"
 
 - path: "/space"
   title: "space"
   banner: "../images/space/banner.png"
-  overview:
-    headline: "Overview"
-    problem:
-      content: "In this project, we wanted to create an educational platform for kids to learn about science and astronomy in a fun, interactive setting. Most kids learn about science in the traditional classroom setting, with an educator using a blackboard to convey lessons to students. Usually, these sessions lack the visual components that would greatly improve the assimilation of information."
-      headline: "Problem"
-    solution:
-      content: "Space Exploration is an educational platform for students to learn about the solar system. Space Exploration is a mobile application that leverages the interactivity of mobile devices to reinforce understanding of astronomy."
-      headline: "Solution"
-    approach:
-      members: "Hathaitorn Rojnirun, Oluseye Bankole"
-      tools: "Javascript, Firebase, Sketch"
-      research: "research"
-      design: "design"
-      testing: "testing"

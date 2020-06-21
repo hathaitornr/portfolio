@@ -42,23 +42,69 @@
 }
 
 .navlinks {
-    display: none;
-    text-align: center;
-    padding-left: 0;
-    margin-top: 0px;
-    margin-bottom: 0;
     background-color: $white;
+    text-align: center;
+    overflow: hidden;
     list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.navMobile {
+    height: 0;
+    margin-top: 20px;
+    transition: height .3s;
+}
+
+.navDesktop {
+    top: 17px;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 20px;
+    margin-top: 0px;
+}
+
+.desktopShow {
+    display: none;
+}
+
+.mobileShow {
+    display: block;
+}
+
+.navDesktop li {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.navDesktop li:nth-child(1) {
+    border-right: 1px dotted $dark-grey;
+}
+
+.navDesktop li:nth-child(3) {
+    border-left: 1px dotted $dark-grey;
+    margin-bottom: 0;
 }
 
 .active {
-    display: block;
+    height: 94px;
+}
+
+.navlinkMobile {
+    margin: 15px auto;
+}
+
+.navlinkDesktop {
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
 }
 
 .navlink {
     background: none;
     border: none;
-    margin: 15px auto;
     cursor: pointer;
     color: $text;
     vertical-align: middle;
@@ -71,10 +117,6 @@
 .navlink:hover {
     padding-bottom: 2px;
     border-bottom: 1px dashed $grey;
-}
-
-.navlinks li:nth-child(1) {
-    border-top: 1px solid $grey;
 }
 
 .navlinks li {
@@ -90,38 +132,16 @@
         align-items: center;
     }
 
+    .desktopShow {
+        display: flex;
+    }
+
+    .mobileShow {
+        display: none;
+    }
+
     .items {
         padding-top: 0px;
-    }
-
-    .navlinks {
-        display: flex;
-        top: 17px;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-        background-color: $white;
-    }
-
-    .navlinks li {
-        border-top: none !important;
-        border-bottom: none !important;
-    }
-
-    .navlink {
-        margin: 0;
-        margin-left: 20px;
-        margin-right: 20px;
-        text-align: center;
-    }
-
-    .navlinks li:nth-child(1) {
-        border-right: 1px dotted $dark-grey;
-    }
-
-    .navlinks li:nth-child(3) {
-        border-left: 1px dotted $dark-grey;
-        margin-bottom: 0;
     }
 
     .toggle {
