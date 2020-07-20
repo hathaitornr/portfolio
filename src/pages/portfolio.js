@@ -2,7 +2,7 @@ import React, { useMemo } from "react"
 import { Link, graphql } from "gatsby"
 import styles from "../styles/portfolio.module.scss"
 
-import { Image } from "../components"
+import { Image, ProjectCaption } from "../components"
 
 const Portfolio = ({
   data: {
@@ -30,26 +30,18 @@ const Portfolio = ({
         <p>Portfolio</p>
       </div>
       <div id="item-container" className={styles.itemContainer}>
-        <figure className={styles.projectBox}>
-          <Link to="/hlthpal">
-            <Image image={data.hlthpal} alt="Hlthpal" />
-          </Link>
-        </figure>
-        <figure className={styles.projectBox}>
-          <Link to="/contentor">
-            <Image image={data.contentor} alt="Contentor" />
-          </Link>
-        </figure>
-        <figure className={styles.projectBox}>
-          <Link to="/geri">
-            <Image image={data.geri} alt="Geri" />
-          </Link>
-        </figure>
-        <figure className={styles.projectBox}>
-          <Link to="/space">
-            <Image image={data.space} alt="Space" />
-          </Link>
-        </figure>
+        <ProjectCaption className={styles.projectBox} path='hlthpal' summary='Summary for Hlthpal'>
+          <Image image={data.hlthpal} alt="Hlthpal" />
+        </ProjectCaption>
+        <ProjectCaption className={styles.projectBox} path='contentor' summary='Summary for Contentor'>
+          <Image image={data.contentor} alt="Contentor" />
+        </ProjectCaption>
+        <ProjectCaption className={styles.projectBox} path='geri' summary='Summary for Geri'>
+          <Image image={data.geri} alt="Geri" />
+        </ProjectCaption>
+        <ProjectCaption className={styles.projectBox} summary='Summary for Space'>
+          <Image image={data.space} alt="Space" />
+        </ProjectCaption>
       </div>
     </div>
   )

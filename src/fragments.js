@@ -6,7 +6,7 @@ export const overview = graphql`
     path
     banner {
       childImageSharp {
-        fluid {
+        fluid(quality: 100, maxWidth: 1440) {
           ...GatsbyImageSharpFluid
         }
       }
