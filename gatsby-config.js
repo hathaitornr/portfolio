@@ -1,11 +1,29 @@
 module.exports = {
   siteMetadata: {
-    title: `Ammew`,
+    title: `Mew Rojnirun`,
     description: `Mew (Hathaitorn) Rojnirun's Portfolio`,
     author: `Mew (Hathaitorn) Rojnirun`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Poppins`,
+            variants: [`300`],
+          },
+        ],
+      },
+    },
+    {
+      resolve: '@mkitio/gatsby-theme-password-protect',
+      options: {
+        password: 'helloFriend123!',
+        pagePaths: ['/work', '/skills']
+      }
+    },
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,

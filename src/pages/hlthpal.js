@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Image, Sidebar } from "../components"
-import { Introduction, Research, Design, Testing, Final, Conclusion } from "../modules/Hlthpal"
+import { Image } from "../components"
+import { Overview, Introduction, Research, Design, Testing, Final, Conclusion } from "../modules/Hlthpal"
 import styles from "../styles/project.module.scss"
 
 const Hlthpal = ({
@@ -13,16 +13,16 @@ const Hlthpal = ({
   return (
     <div className={styles.container}>
       <Image image={banner} alt="Banner" />
-      <div className={styles.stickyWrapper}>
-        <Sidebar />
-        <div className={styles.contentWrapper}>
-          <Introduction />
-          <Research />
-          <Design />
-          <Testing />
-          <Final />
-          <Conclusion />
-        </div>
+      <div className={styles.overviewWrapper}>
+        <Overview />
+      </div>
+      <div className={styles.contentWrapper}>
+        <Introduction />
+        <Research />
+        <Design />
+        <Testing />
+        <Final />
+        <Conclusion />
       </div>
     </div>
   )

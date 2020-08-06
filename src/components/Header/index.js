@@ -18,18 +18,23 @@ const Header = () => {
             <span></span>
           </div>
           <div id="headline" className={styles.infoItem}>
-            <p className={styles.headline}>Hathaitorn Rojnirun</p>
+            <p className={styles.headline}>Mew Rojnirun</p>
           </div>
         </div>
         <ul id="nav-links" className={cx(styles.navlinks, styles.navDesktop, styles.desktopShow)}>
           <li>
-            <Link to="/portfolio">
-              <button className={cx(styles.navlink, styles.navlinkDesktop)}>Portfolio</button>
+            <Link to="/">
+              <button className={cx(styles.navlink, styles.navlinkDesktop)}>About Me</button>
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <button className={cx(styles.navlink, styles.navlinkDesktop)}>About Me</button>
+            <Link to="/work">
+              <button className={cx(styles.navlink, styles.navlinkDesktop)}>UX Research</button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/portfolio">
+              <button className={cx(styles.navlink, styles.navlinkDesktop)}>Side Projects</button>
             </Link>
           </li>
         </ul>
@@ -39,13 +44,18 @@ const Header = () => {
             [styles.active]: !hide,
           })}>
           <li>
-            <Link to="/portfolio">
-              <button className={cx(styles.navlink, styles.navlinkMobile)}>Portfolio</button>
+            <Link to="/">
+              <button className={cx(styles.navlink, styles.navlinkMobile)}>About Me</button>
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <button className={cx(styles.navlink, styles.navlinkMobile)}>About Me</button>
+            <Link to="/work">
+              <button className={cx(styles.navlink, styles.navlinkMobile)}>UX Research</button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/portfolio">
+              <button className={cx(styles.navlink, styles.navlinkMobile)}>Side Projects</button>
             </Link>
           </li>
         </ul>

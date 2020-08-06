@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import styles from "../styles/skills.module.scss"
-import { SEO } from "../components"
 
-const IndexPage = () => {
+const Skills = () => {
   return (
     <div className={styles.container}>
       <div>
@@ -240,4 +239,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default Skills

@@ -4,14 +4,12 @@
     margin-top: 70px;
 }
 
-.stickyWrapper {
-    display: flex;
-    justify-content: space-between;
+.overviewWrapper {
+    margin: 0 10%;
 }
 
 .contentWrapper {
-    margin: 0 auto;
-    margin-right: 20%;
+    margin: 0 20%;
 }
 
 @include phone {

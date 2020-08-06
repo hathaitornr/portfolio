@@ -3,15 +3,13 @@ import cx from "classnames"
 import styles from "./styles.module.scss"
 import { Image } from ".."
 
-const TextWithImage = ({ content, image, reverse }) => {
+const TextWithImage = ({ children, image, reverse }) => {
   return (
     <div
       className={cx(styles.container, {
         [styles.reverse]: reverse,
       })}>
-      <div className={styles.contentSection}>
-        <p className={styles.content}>{content}</p>
-      </div>
+      <div className={styles.contentSection}>{children}</div>
       <div className={styles.imgSection}>
         <Image image={image} alt="test" />
       </div>

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Image, Sidebar } from "../components"
-import { Introduction, Research, Design, Testing, Final, Conclusion } from "../modules/Contentor"
+import { Image } from "../components"
+import { Overview, Introduction, Research, Design, Testing, Final, Conclusion } from "../modules/Contentor"
 import styles from "../styles/project.module.scss"
 
 const Contentor = ({
@@ -13,16 +13,16 @@ const Contentor = ({
   return (
     <div className={styles.container}>
       <Image image={banner} />
-      <div className={styles.stickyWrapper}>
-        <Sidebar />
-        <div className={styles.contentWrapper}>
-          <Introduction />
-          <Research />
-          <Design />
-          <Testing />
-          <Final />
-          <Conclusion />
-        </div>
+      <div className={styles.overviewWrapper}>
+        <Overview />
+      </div>
+      <div className={styles.contentWrapper}>
+        <Introduction />
+        <Research />
+        <Design />
+        <Testing />
+        <Final />
+        <Conclusion />
       </div>
     </div>
   )

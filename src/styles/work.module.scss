@@ -9,8 +9,22 @@
     text-align: center;
 }
 
-.headline {
-    margin-bottom: 50px;
+.introContainer {
+    margin: 0 23%;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.workInfo {
+    margin: 0 20%;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.generalInfo {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .itemContainer {
@@ -32,6 +46,15 @@
 @include phone {
     .container {
         max-width: 100%;
+    }
+
+    .workInfo {
+        margin: 0 10px;
+    }
+
+    .introContainer {
+        margin: 0;
+        padding: 0 10px;
     }
 
     .itemContainer {

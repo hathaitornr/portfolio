@@ -13,16 +13,13 @@ const Geri = ({
   return (
     <div className={styles.container}>
       <Image image={banner} />
-      <div className={styles.stickyWrapper}>
-        <Sidebar />
-        <div className={styles.contentWrapper}>
-          <Introduction />
-          <Research />
-          <Design />
-          <Testing />
-          <Final />
-          <Conclusion />
-        </div>
+      <div className={styles.contentWrapper}>
+        <Introduction />
+        <Research />
+        <Design />
+        <Testing />
+        <Final />
+        <Conclusion />
       </div>
     </div>
   )

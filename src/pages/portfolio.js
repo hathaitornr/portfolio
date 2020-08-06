@@ -1,5 +1,5 @@
 import React, { useMemo } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styles from "../styles/portfolio.module.scss"
 
 import { Image, ProjectCaption } from "../components"
@@ -11,7 +11,7 @@ const Portfolio = ({
 }) => {
   const data = useMemo(() => {
     const res = {}
-    nodes.forEach(node => {
+    nodes.forEach((node) => {
       if (node.childImageSharp.original.src.includes("geri")) {
         res.geri = node
       } else if (node.childImageSharp.original.src.includes("hlthpal")) {
@@ -26,21 +26,19 @@ const Portfolio = ({
   }, [nodes])
   return (
     <div className={styles.container}>
-      <div id="portfolio-headline" className={styles.intro}>
-        <p>Portfolio</p>
+      <div id="portfolio-headline">
+        <p className={styles.intro}>Side Projects</p>
+        <p>Here are some side projects during my time at Cornell Tech :)</p>
       </div>
       <div id="item-container" className={styles.itemContainer}>
-        <ProjectCaption className={styles.projectBox} path='hlthpal' summary='Summary for Hlthpal'>
+        <ProjectCaption className={styles.projectBox} path="hlthpal" summary="Summary for Hlthpal">
           <Image image={data.hlthpal} alt="Hlthpal" />
         </ProjectCaption>
-        <ProjectCaption className={styles.projectBox} path='contentor' summary='Summary for Contentor'>
+        <ProjectCaption className={styles.projectBox} path="contentor" summary="Summary for Contentor">
           <Image image={data.contentor} alt="Contentor" />
         </ProjectCaption>
-        <ProjectCaption className={styles.projectBox} path='geri' summary='Summary for Geri'>
+        <ProjectCaption className={styles.projectBox} path="geri" summary="Summary for Geri">
           <Image image={data.geri} alt="Geri" />
-        </ProjectCaption>
-        <ProjectCaption className={styles.projectBox} summary='Summary for Space'>
-          <Image image={data.space} alt="Space" />
         </ProjectCaption>
       </div>
     </div>

@@ -10,6 +10,8 @@
   title: "hlthpal"
   banner: "../images/hlthpal/banner.png"
 
-- path: "/space"
-  title: "space"
-  banner: "../images/space/banner.png"
+- path: "/work"
+  title: "work"
+  banner: "../images/work/logo_scholastic.png"
+  general: "../images/work/whatido.jpg"
+  sample: "../images/work/learnathome.png"

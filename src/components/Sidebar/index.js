@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className={styles.container}>
       <ul className={styles.linkList}>
-        {list.map(link => (
+        {list.map((link) => (
           <li>
             <a href={`#${link}`}>{link}</a>
           </li>

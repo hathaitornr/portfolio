@@ -6,30 +6,40 @@ import { SEO } from "../components"
 
 const IndexPage = ({ data }) => {
   return (
-    <>
+    <div className={styles.container}>
       {/* <SEO title="About Me" /> */}
-      <div id="about-container" className={styles.container}>
+      <div className={styles.introContainer}>
+        <p className={styles.intro}>Hi, I'm Mew! <span role='img'>👋</span></p>
+      </div>
+      <div id="about-container" className={styles.aboutContainer}>
         <div id="img-section" className={styles.imgSection}>
-          <Img fixed={data.file.childImageSharp.fixed} alt="Profile" />
+          <Img fluid={data.file.childImageSharp.fluid} alt="Profile" />
         </div>
         <div id="about-section" className={styles.aboutSection}>
-          <p className={styles.intro}>Hi, I'm Mew!</p>
           <p className={styles.content}>
-            Hi, my name is Hathaitorn but I go by Mew! I am a recent graduate from Cornell Tech with a dual Master's
-            degree in Information Systems &amp; Applied Information Science with a concentration in HCI.
+            I am an avid UX/Design Researcher with 4+ years experience in design and research, and a passion in shaping
+            interactive experiences that promote usability and creating meaningful impact for users. I received a Master's
+            degree from Cornell Tech in Information Science and Applied Information Systems with a HCI Specialization. 
             <br />
-            <br />I am passionate about designing and developing interactive applications that create meaningful impact
-            for users. I also love creating new toys that people can enjoy and play with, whether it be a digital art
-            experience, a robot, or an app!
-          </p>
-          <p>
+            <br />
+            I am currently a Design Researcher at Scholastic Inc., where I conduct research on parents and teachers to
+            better serve Scholastic’s customers in children education.
+            <br />
+            <br />
+            With a background in HCI and data science, I’m well-versed in both Qualitative and Quantitative aspects of
+            user research. And with experience working in multi-disciplinary teams, and as a former engineer myself, I know
+            how to translate and communicate research findings into high quality actionable recommendations.
+            <br />
+            <br />
+            <span>Feel free to stop by and say hello on </span>
             <a className={styles.link} href="https://www.linkedin.com/in/hrojnirun/">
               LinkedIn
             </a>
+            <span role='img'> 🙋‍♀️</span>
           </p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -39,10 +49,8 @@ export const data = graphql`
   query {
     file(relativePath: { eq: "photo.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(width: 300, height: 300) {
-          ...GatsbyImageSharpFixed
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
